@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: this-app                    # Name of the deployment
+spec:
+  replicas: 1                       # Number of replicas
+  selector:
+    matchLabels:
+      app: this-app                 # Label selector, determines which pods are controlled by this deployment
+  template:
+    metadata:
+      labels:
+        app: this-app               # Label applied to pods created by this deployment
+    spec:
+      containers:
+        - name: this-app            # Name of the container
+          image: nginx:latest       # Image to run in the container
+          ports:
+            - containerPort: 8081   # Port the container listens on

@@ -1,0 +1,5 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:   # List of resources to include in the kustomization, located in the base directory.
+  - deployment.yaml
+  - service.yaml

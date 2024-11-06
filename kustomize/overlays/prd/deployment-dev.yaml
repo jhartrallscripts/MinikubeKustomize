@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: this-app
+spec:
+  replicas: 5           # Updated for prd environment
+  template:
+    spec:
+      containers:
+      - name: this-app  # Name of the container to which this configuration will be applied

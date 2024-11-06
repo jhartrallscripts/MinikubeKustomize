@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: this-app
+spec:
+  replicas: 2           # Updated for dev environment
+  template:
+    spec:
+      containers:
+      - name: this-app  # Name of the container to which this configuration will be applied
