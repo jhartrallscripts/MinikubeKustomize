@@ -5,5 +5,5 @@ resources:
   - ../../base  # Path to the base directory containing the resources to include in the kustomization.
 
 patches:        # List of patches to apply to the resources in the base directory.
-- path: deployment-dev.yaml
-- path: service-dev.yaml
+- path: deployment-prd.yaml
+- path: service-prd.yaml
